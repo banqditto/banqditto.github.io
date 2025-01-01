@@ -5,6 +5,28 @@
     box-sizing: border-box;
 }
 
+@media all and (max-width: 1000px) {
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 670px) {
+  
+  .lesson {
+    width: 100%;
+  }
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,24 +35,48 @@ body {
 }
 
 /* Header */
+/* Header Style */
 header {
-    background: #4CAF50;
+    background: linear-gradient(135deg, #4caf50, #2e7d32); /* Gradien hijau */
     color: white;
+    padding: 3rem 0;
     text-align: center;
-    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Tambahkan efek dekorasi dengan pola */
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('pattern.png') center/cover no-repeat; /* Gambar pola */
+    opacity: 0.1; /* Transparansi pola */
+    z-index: 1;
+}
+
+header .container {
+    position: relative;
+    z-index: 2; /* Pastikan konten berada di atas dekorasi */
+}
+
+/* Teks di header */
 header h1 {
     font-size: 2.5rem;
+    margin: 1rem 0;
     margin-bottom: 0.5rem;
 }
 
 header h1 span {
-    color: #FFD700;
+    color: #FFD700; /* Warna emas untuk nama */
 }
 
 header p {
     font-size: 1.2rem;
+    font-weight: 300;
 }
 
 /* Navigation */
@@ -68,7 +114,7 @@ section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
-    color: #4CAF50;
+    color: #black;
 }
 
 section p {
@@ -76,31 +122,54 @@ section p {
 }
 
 /* Projects */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+
+
+/* lesson */
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
 }
 
-.project {
-    background: #f4f4f4;
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: center;
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
 }
 
-.project h3 {
-    color: #4CAF50;
-    margin-bottom: 0.5rem;
+.heading h2 {
+  font-weight: normal;
 }
 
-.project a {
-    text-decoration: none;
-    color: #4CAF50;
+.lesson {
+  float: left;
+  width: 25%;
 }
 
-.project a:hover {
-    color: #333;
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
 }
 
 /* Footer */
