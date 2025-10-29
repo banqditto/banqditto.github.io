@@ -152,6 +152,14 @@ section p {
   font-weight: normal;
 }
 
+.lessons {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 0; 
+  margin: 0 -10px;
+}
+
 .lesson {
   width: 23%;
   margin-bottom: 50px;
