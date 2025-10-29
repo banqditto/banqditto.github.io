@@ -20,7 +20,7 @@
   }
 }
 
-@media all and (max-width: 670px) {
+@media all and (max-width: 768px) {
   
   .lesson {
     width: 100%;
@@ -123,16 +123,7 @@ section p {
     text-align: center;
 }
 
-/* Projects */
-
-
 /* lesson */
-
-.lesson-wrapper .container .lessons { 
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 .lesson-wrapper {
   padding-bottom: 80px;
