@@ -166,12 +166,15 @@ section p {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  width: 100%;
+  text-align: center;
 }
 
 .txt-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 15px auto 0;
   font-size: 15px;
   color: #b3aeb5;
 }
