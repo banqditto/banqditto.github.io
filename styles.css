@@ -24,6 +24,8 @@
   
   .lesson {
     width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -114,7 +116,7 @@ section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
-    color: #black;
+    color: black;
 }
 
 section p {
@@ -125,6 +127,12 @@ section p {
 
 
 /* lesson */
+
+.lesson-wrapper .container .lessons { 
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .lesson-wrapper {
   padding-bottom: 80px;
@@ -145,8 +153,8 @@ section p {
 }
 
 .lesson {
-  float: left;
-  width: 25%;
+  width: 23%;
+  margin-bottom: 50px;
 }
 
 .lesson-icon {
